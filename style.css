@@ -1,0 +1,13 @@
+/* Custom styles for Sandy Portfolio */
+:root {
+  --primary-color: #2563eb;
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
