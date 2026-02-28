@@ -104,7 +104,7 @@ const navigateTo = (page) => {
             </p>
 
             <div class="flex gap-4 pt-4">
-              <a href="/Sandy_CV.pdf" download="Sandy_CV.pdf" class="flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-2xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
+              <a href="/CV_Sandy.pdf" download="CV_Sandy.pdf" class="flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-2xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
                 <span class="material-symbols-outlined">download</span> Download Resume
               </a>
             </div>
