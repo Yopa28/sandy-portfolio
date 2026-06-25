@@ -8,27 +8,27 @@
 
         <div class="space-y-4">
           <div class="flex flex-wrap items-end gap-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
+            <label class="flex flex-col min-w-40 flex-1" for="contact-name">
               <span class="text-[#111418] dark:text-white text-base font-medium mb-2">Name</span>
-              <input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="Enter your full name" type="text"/>
+              <input id="contact-name" class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-none focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="Enter your full name" type="text"/>
             </label>
           </div>
           <div class="flex flex-wrap items-end gap-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
+            <label class="flex flex-col min-w-40 flex-1" for="contact-email">
               <span class="text-[#111418] dark:text-white text-base font-medium mb-2">Email</span>
-              <input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="email@example.com" type="email"/>
+              <input id="contact-email" class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-none focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="email@example.com" type="email"/>
             </label>
           </div>
           <div class="flex flex-wrap items-end gap-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
+            <label class="flex flex-col min-w-40 flex-1" for="contact-subject">
               <span class="text-[#111418] dark:text-white text-base font-medium mb-2">Subject</span>
-              <input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="What's this about?" type="text"/>
+              <input id="contact-subject" class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-none focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 h-14 placeholder:text-[#637588] p-[15px] text-base" placeholder="What's this about?" type="text"/>
             </label>
           </div>
           <div class="flex flex-wrap items-end gap-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
+            <label class="flex flex-col min-w-40 flex-1" for="contact-message">
               <span class="text-[#111418] dark:text-white text-base font-medium mb-2">Message</span>
-              <textarea class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 placeholder:text-[#637588] p-[15px] text-base" placeholder="Tell me more about your project..." rows="5"></textarea>
+              <textarea id="contact-message" class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-none focus:ring-2 focus:ring-primary border border-[#dce0e5] dark:border-gray-700 bg-white dark:bg-gray-800 placeholder:text-[#637588] p-[15px] text-base" placeholder="Tell me more about your project..." rows="5"></textarea>
             </label>
           </div>
           <div class="py-4">
@@ -65,7 +65,7 @@
 
         <div class="flex flex-col gap-6">
           <h3 class="text-xl font-bold">Follow Me</h3>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a href="https://www.linkedin.com/in/sandyyopa/" target="_blank" class="flex items-center gap-3 p-4 rounded-xl border border-[#dce0e5] dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
               <div class="text-[#111418] dark:text-white">
                 <svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>

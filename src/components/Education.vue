@@ -8,13 +8,13 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="edu in education" :key="edu.school" 
-             class="group p-8 rounded-[2rem] bg-white dark:bg-white/5 border border-gray-100 dark:border-white/5 hover:border-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+             class="group p-6 sm:p-8 rounded-[2rem] bg-white dark:bg-white/5 border border-gray-100 dark:border-white/5 hover:border-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
           <div class="flex flex-col h-full">
-            <div class="flex items-center justify-between mb-6">
-              <div class="p-3 bg-primary/10 rounded-2xl text-primary">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+              <div class="p-3 bg-primary/10 rounded-2xl text-primary w-fit">
                 <span class="material-symbols-outlined text-[28px]">school</span>
               </div>
-              <span class="text-xs font-black text-primary uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full">{{ edu.date }}</span>
+              <span class="text-xs font-black text-primary uppercase tracking-widest bg-primary/5 px-4 py-1.5 rounded-full self-start sm:self-auto">{{ edu.date }}</span>
             </div>
             <h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{{ edu.degree }}</h3>
             <p class="text-lg font-bold opacity-70 mb-4">{{ edu.school }}</p>

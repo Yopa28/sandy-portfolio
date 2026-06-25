@@ -29,13 +29,13 @@ const handleNavigate = (page) => {
       </div>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-1">
-        <template v-for="page in ['home', 'project', 'about', 'contact']" :key="page">
+      <nav class="hidden md:flex items-center gap-1" aria-label="Desktop Navigation">
+        <template v-for="page in ['home', 'project', 'experience', 'contact']" :key="page">
           <a 
             href="#" 
             @click.prevent="handleNavigate(page)" 
             :class="[
-              'relative px-5 py-2 text-sm font-bold capitalize transition-all duration-300',
+              'relative px-5 py-2 text-sm font-bold capitalize transition-all duration-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary',
               currentPage === page ? 'text-primary' : 'text-[#637588] dark:text-gray-400 hover:text-primary'
             ]"
           >
@@ -53,7 +53,7 @@ const handleNavigate = (page) => {
         <!-- Dark Mode Toggle -->
         <button
           @click="$emit('toggle-dark')"
-          class="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 transition-all active:scale-90"
+          class="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 transition-all active:scale-90 focus:outline-none focus:ring-2 focus:ring-primary"
           aria-label="Toggle dark mode"
         >
           <span v-if="!isDark" class="material-symbols-outlined !text-[20px]">dark_mode</span>
@@ -63,7 +63,10 @@ const handleNavigate = (page) => {
         <!-- Mobile Menu Toggle -->
         <button
           @click="isMenuOpen = !isMenuOpen"
-          class="md:hidden p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 transition-all"
+          :aria-expanded="isMenuOpen"
+          aria-controls="mobile-menu"
+          aria-label="Toggle Mobile Menu"
+          class="md:hidden p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-white/5 transition-all focus:outline-none focus:ring-2 focus:ring-primary"
         >
           <span class="material-symbols-outlined !text-[24px]">
             {{ isMenuOpen ? 'close' : 'menu' }}
@@ -81,10 +84,10 @@ const handleNavigate = (page) => {
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-4"
     >
-      <div v-if="isMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-white dark:bg-background-dark border-b border-gray-100 dark:border-white/5 shadow-2xl">
-        <nav class="flex flex-col p-6 gap-2">
+      <div v-if="isMenuOpen" id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white dark:bg-background-dark border-b border-gray-100 dark:border-white/5 shadow-2xl">
+        <nav aria-label="Mobile Navigation" class="flex flex-col p-6 gap-2">
           <a 
-            v-for="page in ['home', 'project', 'about', 'contact']" 
+            v-for="page in ['home', 'project', 'experience', 'contact']" 
             :key="page"
             href="#" 
             @click.prevent="handleNavigate(page)"

@@ -21,6 +21,7 @@
         src="/images/CashWave.jpg" 
         alt="Cashwave App"
         aspectRatio="mobile"
+        url="https://github.com/Yopa28/CashWave-Mobile"
       />
 
       <ProjectCard 
@@ -30,15 +31,17 @@
         src="/images/dashboard.png"
         alt="Cashwave Dashboard"
         aspectRatio="desktop"
+        url="https://github.com/Desber12/CashWave"
       />
-      <ProjectCard 
-        title="Kedai Sepijak"
-        category="Fullstack Web"
-        tech="Vue.js • Javascript • Express.js"
-        src="/images/sepijak.png"
-        alt="Kedai Sepijak"
-        aspectRatio="desktop"
-      />
+      <ProjectCard
+      title="Kedai Sepijak"
+      category="Fullstack Web"
+      tech="Vue.js • JavaScript • Express.js • MySQL"
+      src="/images/sepijak.png"
+      alt="Kedai Sepijak"
+      aspectRatio="desktop"
+      url="https://kedai-sepijak.vercel.app/"
+    />
     </div>
 
     <!-- Mobile See All -->

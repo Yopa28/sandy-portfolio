@@ -12,17 +12,17 @@
             <h2 class="text-xl font-black tracking-tight text-[#111418] dark:text-white">Sandy Yopa</h2>
           </div>
           <p class="text-sm text-[#637588] dark:text-gray-400 leading-relaxed">
-            Crafting digital experiences with precision and passion. Specializing in Full-stack development and Machine Learning.
+          Informatics Engineering Graduate | Fullstack Developer
           </p>
         </div>
 
-        <div class="grid grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16 mt-12 md:mt-0">
           <div class="space-y-4">
             <h4 class="text-sm font-black uppercase tracking-widest">Navigation</h4>
             <div class="flex flex-col gap-2">
               <a @click.prevent="$emit('navigate', 'home')" href="#" class="text-sm text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Home</a>
               <a @click.prevent="$emit('navigate', 'project')" href="#" class="text-sm text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Projects</a>
-              <a @click.prevent="$emit('navigate', 'about')" href="#" class="text-sm text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">About</a>
+              <a @click.prevent="$emit('navigate', 'experience')" href="#" class="text-sm text-[#637588] dark:text-gray-400 hover:text-primary transition-colors">Experience</a>
             </div>
           </div>
           <div class="space-y-4">
