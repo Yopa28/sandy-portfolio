@@ -1,4 +1,6 @@
 <script setup>
+const cvUrl = "/Sandy_CV.pdf"
+
 const experiences = [
   {
     id: 1,
@@ -35,14 +37,27 @@ const experiences = [
 ]
 </script>
 
+
 <template>
   <section class="py-20 px-6 max-w-[1200px] mx-auto overflow-hidden" id="experience">
     <!-- Section Header -->
-    <div class="flex items-center gap-4 mb-16">
-      <h2 class="text-2xl font-black uppercase tracking-widest shrink-0">
-        Experience
-      </h2>
-      <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-16">
+      <div class="flex items-center gap-4 flex-1 w-full">
+        <h2 class="text-2xl font-black uppercase tracking-widest shrink-0">
+          Experience
+        </h2>
+        <div class="h-px bg-gray-200 dark:bg-white/10 flex-1"></div>
+      </div>
+<a
+  href="/Sandy_CV.pdf"
+  download="Sandy_CV.pdf"
+  class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold hover:shadow-xl hover:shadow-primary/20 transition-all"
+>
+  <span class="material-symbols-outlined text-[20px]">
+    download
+  </span>
+  Download CV
+</a>
     </div>
 
     <!-- Timeline Container -->
